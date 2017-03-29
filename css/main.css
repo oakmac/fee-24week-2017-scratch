@@ -1,0 +1,17 @@
+#foodImg {
+  width: 100px;
+}
+
+.dark {
+  background-color: #aaa;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.meat.best {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 700;
+}
