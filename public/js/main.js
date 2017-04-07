@@ -1,8 +1,7 @@
 var $ = window.jQuery
 
-function buildPerson (htmlList, person) {
-  htmlList += '<li>' + person.fname + ' ' + person.lname +
-              '</li>'
+function buildPersonHTML (htmlList, person) {
+  htmlList += '<li>' + person.fname + ' ' + person.lname + '</li>'
   return htmlList
 }
 
@@ -12,13 +11,13 @@ function clearLoadingState () {
 }
 
 function fetchClassDataSuccess (classList) {
-  var theHTMLList = classList.reduce(buildPerson, '')
-  $('#classList').html(theHTMLList)
+  var classListHTML = classList.reduce(buildPersonHTML, '')
+  $('#classList').html(classListHTML)
   clearLoadingState()
 }
 
 function fetchClassDataError () {
-  $('#classList').html('Opps :( Sorry, could not fetch the class list. Please try again.')
+  $('#classList').html('<p>Opps :( Sorry, could not fetch the class list. Please try again.</p>')
   clearLoadingState()
 }
 
@@ -26,8 +25,8 @@ function fetchClassData () {
   $.ajax({
     dataType: 'json',
     error: fetchClassDataError,
-    url: 'class.json?_slow=1',
-    success: fetchClassDataSuccess
+    success: fetchClassDataSuccess,
+    url: 'class.json?_slow=1'
   })
 }
 
@@ -54,13 +53,13 @@ function clickSlideDownBtn () {
   $('#crazyDiv').slideDown(finishSlideDown)
 }
 
-function clickClassBtn () {
+function clickFetchClassBtn () {
   fetchClassData()
   setLoadingState()
 }
 
 function addEvents () {
-  $('#loadClassBtn').click(clickClassBtn)
+  $('#loadClassBtn').click(clickFetchClassBtn)
   $('#slideUpBtn').click(clickSlideUpBtn)
   $('#slideDownBtn').click(clickSlideDownBtn)
 }
