@@ -1,0 +1,12 @@
+{
+  "name": "scratch",
+  "version": "0.0.1",
+  "homepage": "https://github.com/oakmac/scratch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oakmac/scratch.git"
+  },
+  "devDependencies": {
+    "express": "4.12.3"
+  }
+}

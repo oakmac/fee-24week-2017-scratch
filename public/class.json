@@ -1,0 +1,32 @@
+[
+  {
+    "fname": "Jen",
+    "lname": "Penfield",
+    "gender": "female",
+    "isStudent": true
+  },
+  {
+    "fname": "Mike",
+    "lname": "Stegall",
+    "gender": "male",
+    "isStudent": true
+  },
+  {
+    "fname": "Hayder",
+    "lname": "Naji",
+    "gender": "male",
+    "isStudent": true
+  },
+  {
+    "fname": "Chris",
+    "lname": "Oakman",
+    "gender": "male",
+    "isStudent": false
+  },
+  {
+    "fname": "Caitlin",
+    "lname": "Flattery",
+    "gender": "female",
+    "isStudent": false
+  }
+]

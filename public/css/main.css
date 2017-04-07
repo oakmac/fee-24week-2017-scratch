@@ -1,0 +1,39 @@
+body {
+  background-color: #eee;
+  font-family: Helvetica, sans-serif;
+}
+
+.big-btn {
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#crazyDiv {
+  border: 2px solid orange;
+  padding: 40px;
+}
+
+li {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+#foodImg {
+  width: 100px;
+}
+
+.dark {
+  background-color: #aaa;
+}
+
+.light {
+  background-color: #fff;
+}
+
+.meat.best {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 700;
+}
